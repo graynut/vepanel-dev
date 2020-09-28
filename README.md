@@ -1,6 +1,6 @@
-# vstep
+# vepanel
 
-[GitHub Pages](https://malacca.github.io/vstep/)
+[GitHub Pages](https://graynut.github.io/vepanel-dev/)
 
 # TODO
 
