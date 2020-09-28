@@ -24,7 +24,7 @@ import {
     loadApp
 } from './vepanel';
 
-let appUrl = '/src/app/', appConf, baseUrl;
+let appUrl = './../src/app/', appConf, baseUrl;
 function importAppJs(name) {
     return getImportResult(appUrl + name + '.js');
 }
