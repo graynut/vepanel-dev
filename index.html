@@ -1,0 +1,68 @@
+<!doctype html><html><head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <title>VePanel - Vue admin console</title>
+   <link rel="stylesheet" type="text/css" href="docs/static.css"/>
+   <script defer async="true" 
+      src="https://cdn.jsdelivr.net/npm/requirecdn@2.3.6/lib/index.js"
+      data-main="docs/static.js"
+   ></script>
+</head><body>
+
+<header><div class="bar">
+   <div class="logo">
+      <svg viewBox="0 0 30 30" version="1.1" aria-hidden="true"><path d="M13.3 29Q15 30,16.7 29L26.3 23.5Q28 22.5,28 20.5V9.5Q28 7.5,26.3 6.5L16.7 1Q15 0,13.3 1L3.7 6.5Q2 7.5,2 9.5V20.5Q2 22.5,3.7 23.5M16.7 27Q15 28,13.3 27L5.5 22.5Q3.7 21.5,3.7 19.5V10.5Q3.7 8.5,5.5 7.5L13.3 3Q15 2,16.7 3L24.5 7.5Q26.3 8.5,26.3 10.5V19.5Q26.3 21.5,24.5 22.5ZM13.3 26Q15 27,16.7 26L19.3 24.5L4.6 16L4.6 19Q4.6 21,6.3 22ZM16.7 4Q15 3,13.3 4L10.7 5.5L25.4 14L25.4 11Q25.4 9,23.7 8ZM17.4 10.8Q19.2 10.7,20 12.3L15.5 20.2A1.6 1.6 0 0 1 12.9 18.7ZM12.6 19.2Q12.4 19,14.3 15.8L11.7 11.2Q9.9 11.1,9.1 12.7Z"></path></svg>
+      <span>
+         <h1>VePanel</h1>
+         <h2>用于快速搭建中后台</h2>
+      </span>
+   </div>
+   <nav>
+      <a target="_blank" href="demo/des.html">DES版</a>
+      <a target="_blank" href="demo/dev.html">DEV版</a>
+      <a target="_blank" href="demo/">生产版</a>
+      <a target="_blank" href="https://github.com/malacca/vstep">
+         <svg viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+         GitHub
+      </a>
+   </nav>
+   <div class="toggle-aside" toggle="show-aside"></div>
+   <div class="toggle-nav" toggle="show-nav"></div>
+</div></header>
+   
+<main>
+   <aside toggle="show-nav"><div class="menu">
+      <ul>
+         <li class="subject">基本</li>
+         <li md="guide/intro">前言</li>
+         <li md="guide/start">快速开始</li>
+         <li md="guide/auth">登陆验证</li>
+         <li md="guide/sfc">页面组件</li>
+         <li md="guide/import">模块引用</li>
+         <li md="guide/api">全局 API</li>
+         <li md="guide/mock">模拟数据</li>
+         <li md="guide/design">设计规范</li>
+         <li md="guide/develop">二次开发</li>
+         <!-- <ul>
+            <li class="group">分组一</li>
+            <li md="1-intro">概述</li>
+            <ul>
+               <li class="group">分组二</li>
+               <li md="2-start">快速开始</li>
+               <ul>
+                  <li class="group">分组二</li>
+                  <li md="3-import">引用模块</li>
+               </ul>
+            </ul>
+         </ul> -->
+
+         <li class="subject">组件</li>
+         <li md="components/curd">Curd</li>
+         <li md="components/curd-form">CurdForm</li>
+      </ul>
+   </div></aside>
+   <article><div class="content"></div></article>
+</main>
+</body>
+</html>

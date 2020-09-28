@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/vue-router",
+  "version": "3.4.5",
+  "description": "vue-router for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

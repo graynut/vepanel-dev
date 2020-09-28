@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/dexie",
+  "version": "3.0.2",
+  "description": "dexie for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

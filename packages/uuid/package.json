@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/uuid",
+  "version": "8.3.0",
+  "description": "uuid for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

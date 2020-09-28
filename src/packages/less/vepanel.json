@@ -1,0 +1,11 @@
+{
+    "type":"npm",
+    "package":"less",
+    "version":"3.12.2",
+    "files":{
+        "index.js": "dist/less.min.js"
+    },
+    "desc":[
+        "移除了 source map 注释"
+    ]
+}

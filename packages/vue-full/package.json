@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/vue-full",
+  "version": "2.6.12",
+  "description": "vue-full for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

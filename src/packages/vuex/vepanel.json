@@ -1,0 +1,8 @@
+{
+    "type":"npm",
+    "package":"vuex",
+    "version":"3.5.1",
+    "files":{
+        "index.js": "dist/vuex.min.js"
+    }
+}

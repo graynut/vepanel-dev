@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/sortablejs",
+  "version": "1.12.0",
+  "description": "sortablejs for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

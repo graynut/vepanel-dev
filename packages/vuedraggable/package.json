@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/vuedraggable",
+  "version": "2.24.1",
+  "description": "vuedraggable for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+    "type":"npm",
+    "package":"uuid",
+    "version":"8.3.0",
+    "files":{
+        "index.js": "dist/umd/uuid.min.js",
+        "NIL.js": "dist/umd/uuidNIL.min.js",
+        "parse.js": "dist/umd/uuidParse.min.js",
+        "stringify.js": "dist/umd/uuidStringify.min.js",
+        "v1.js": "dist/umd/uuidv1.min.js",
+        "v3.js": "dist/umd/uuidv3.min.js",
+        "v4.js": "dist/umd/uuidv4.min.js",
+        "v5.js": "dist/umd/uuidv5.min.js",
+        "validate.js": "dist/umd/uuidValidate.min.js",
+        "version.js": "dist/umd/uuidVersion.min.js"
+    },
+    "desc":[
+        "仅保留了 umd 规范的 js"
+    ]
+}

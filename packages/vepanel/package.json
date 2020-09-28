@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/vepanel",
+  "version": "1.0.0",
+  "description": "vepanel for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

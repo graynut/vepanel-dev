@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/kindeditor",
+  "version": "0.0.7",
+  "description": "kindeditor for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

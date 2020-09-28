@@ -1,0 +1,8 @@
+{
+    "type":"npm",
+    "package":"vue-router",
+    "version":"3.4.5",
+    "files":{
+        "index.js": "dist/vue-router.min.js"
+    }
+}

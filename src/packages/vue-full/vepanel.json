@@ -1,0 +1,8 @@
+{
+    "type":"npm",
+    "package":"vue",
+    "version":"2.6.12",
+    "files":{
+        "index.js": "dist/vue.min.js"
+    }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.phpunit.result.cache
+
+
+._*
+package-lock.json
+/src/**/_update
+/node_modules

@@ -1,0 +1,7 @@
+{
+  "name": "@vepanel/curd-utils",
+  "version": "0.0.1",
+  "description": "curd-utils for vepanel",
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+'use strict';
+const path = require("path");
+const Vepanel = require('./../index');
+const {minimist, turbocolor, stderr} = Vepanel.utils;
+
+/**
+ * vepanel 
+ *    -i filePath|dirPath     待编译文件/文件夹
+ *    -o filePath|dirPath     输出文件/文件夹
+ *    -q                      静默编译
+ * 
+ *    -d                      不压缩
+ *    -asset-dir dirName      静态资源输出的文件夹名
+ *    -module-dir dirPath     node_modules 文件夹路径, 主要为了可以引用该文件夹下的静态资源
+ *                            一般是不建议使用该功能的
+ */
+const cwd = process.cwd();
+const command = minimist(process.argv.slice(2), {
+  alias: {
+    i: "input",
+    o: "output",
+    d: "dev",
+    q: "quiet",
+  }
+});
+
+if (!command.input || !command.output) {
+  if (!command.quiet) {
+    stderr(turbocolor.red.bold('input or output not defined'))
+  }
+  process.exit(1);
+}
+const sumCommand = command._.length ? command._[0] : null;
+const input = path.join(cwd, command.input);
+const output = path.join(cwd, command.output);
+
+if (sumCommand === 'mock') {
+  // build mock
+  Vepanel.buildMock(input, output, Boolean(command.quiet))
+
+} else {
+  // build SFC
+  const conf = {
+    compress: !command.dev,
+    quiet: Boolean(command.quiet),
+  };
+  if (command['asset-dir']) {
+    conf.assetsDir = command['asset-dir'];
+  }
+  if (command['module-dir']) {
+    conf.moduleDir = path.join(cwd, command['asset-dir']);
+  }
+  
+  Vepanel.build(input, output, conf)
+}

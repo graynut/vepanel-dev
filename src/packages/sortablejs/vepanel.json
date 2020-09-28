@@ -1,0 +1,11 @@
+{
+    "type":"npm",
+    "package":"sortablejs",
+    "version":"1.12.0",
+    "files":{
+        "index.js": "dist/sortable.umd.js"
+    },
+    "desc":[
+        "移除了 source map 注释"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "type":"npm",
+    "package":"vue-clock2",
+    "version":"1.1.5",
+    "minor":"",
+    "files":{
+        "index.js": "dist/vue-clock.min.js"
+    },
+    "desc":[
+        "移除 define 中强制指定的 Clock 命名"
+    ]
+}

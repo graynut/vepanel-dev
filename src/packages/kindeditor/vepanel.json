@@ -1,0 +1,11 @@
+{
+    "type":"github",
+    "package":"malacca/kindeditor",
+    "version":"0.0.7",
+    "files":{
+        "lang": "dist/lang",
+        "plugins": "dist/plugins",
+        "themes": "dist/themes",
+        "index.js": "dist/kindeditor.all.min.js"
+    }
+}

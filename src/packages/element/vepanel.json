@@ -1,0 +1,15 @@
+{
+    "type":"npm",
+    "package":"element-ui",
+    "version":"2.13.2",
+    "files":{
+        "index.js": "lib/index.js",
+        "theme.css": "lib/theme-chalk/index.css",
+        "fonts/element-icons.ttf": "lib/theme-chalk/fonts/element-icons.ttf",
+        "fonts/element-icons.woff": "lib/theme-chalk/fonts/element-icons.woff"
+    },
+    "desc":[
+        "移除 define 中强制指定的 ELEMENT 命名",
+        "修正 radio-group 自动获取 Tag 名, 搜索 $vnode.data 即可看到"
+    ]
+}

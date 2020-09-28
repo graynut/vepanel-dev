@@ -1,0 +1,8 @@
+{
+    "type":"npm",
+    "package":"dexie",
+    "version":"3.0.2",
+    "files":{
+        "index.js": "dist/dexie.min.js"
+    }
+}

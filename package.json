@@ -1,0 +1,23 @@
+{
+  "name": "vepanel-src",
+  "version": "1.0.0",
+  "description": "convert vue sfc to js",
+  "main": "src/build.js",
+  "scripts": {
+    "server": "node ./src/server.js",
+    "update": "node ./src/build.js update",
+    "build:app": "node ./src/build.js app",
+    "build:pack": "node ./src/build.js package",
+    "build:demo": "vepanel -i demo/view -o demo/dist",
+    "build:mock": "vepanel mock -i demo/mock.js -o demo/mock & vepanel mock -i demo/view -o demo/mock"
+  },
+  "author": {
+    "name": "malacca"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vepanel": "^1.0.0",
+    "decompress": "^4.2.1"
+  }
+}
