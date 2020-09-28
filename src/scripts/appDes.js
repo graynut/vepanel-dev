@@ -151,7 +151,7 @@ function launch(conf) {
 function app() {
     // 配置 require 基础目录为 src/packages 源目录, vue 为完整版
     requirejs.config({
-        baseUrl: "/src/packages/",
+        baseUrl: "./../src/packages/",
         baseName: "index.js",
         paths:{
             vue:"vue-full"
