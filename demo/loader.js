@@ -13,7 +13,7 @@
         },
     };
     if (require.vepanel !== 'des') {
-        config.baseUrl = "/packages/";
+        config.baseUrl = "./../packages/";
         config.baseName = 'index';
     }
     requirejs.config(config);
