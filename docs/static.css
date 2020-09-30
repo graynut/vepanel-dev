@@ -11,7 +11,7 @@
     /*侧边栏宽度, 侧边背景, 侧边阴影颜色, 选中菜单背景*/
     --aside-width:210px;
     --aside-background:#fcfcfc;
-    --aside-shadow:4px 0 4px rgb(200 200 200/ 10%);
+    --aside-shadow:2px 0 4px rgb(200 200 200/ 10%);
     --aside-active-background:#d9f1e6;
 
     /*主色调*/
