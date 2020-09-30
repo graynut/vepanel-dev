@@ -9,9 +9,9 @@
                 </span>
             </div>
             <p>
-                <el-link type="info" target="_blank" href="https://vepanel.github.io/vepanel/">DOCUMENT</el-link>
-                <el-link type="info" target="_blank" href="https://github.com/vepanel/vepanel/issues">ISSUESS</el-link>
-                <el-link type="info" target="_blank" href="https://github.com/vepanel/vepanel">GITHUB</el-link>
+                <el-link type="info" target="_blank" href="https://graynut.github.io/vepanel-dev/">DOCUMENT</el-link>
+                <el-link type="info" target="_blank" href="https://github.com/graynut/vepanel-dev/issues">ISSUESS</el-link>
+                <el-link type="info" target="_blank" href="https://github.com/graynut/vepanel-dev">GITHUB</el-link>
             </p>
         </div>
     </div>

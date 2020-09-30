@@ -57,7 +57,7 @@ function getAssetRealPath(url, base) {
         // des 版本, SFC 文件也可能来自于 组件
         if (process.env.BUILD_TYPE === 'des') {
             const parse = new URL(base, 'http://localhost');
-            if (parse.pathname.startsWith('/src/packages/')) {
+            if (parse.pathname.indexOf('/src/packages/') > -1) {
                 modules_dir = parse.pathname.split('/').slice(0, 4).join('/') + '/node_modules/'
             }
         }
@@ -270,7 +270,7 @@ function getCodeUrl(code, baseURI) {
                         resolve(null);
                     } else {
                         // des 版, 组件可能是本地组件, 根据 vepanel.json 配置决定
-                        fetch('/src/packages/'+src+'/vepanel.json').then(function (res) {
+                        fetch('./../src/packages/'+src+'/vepanel.json').then(function (res) {
                             if (res.status !== 200) {
                                 return false;
                             }
@@ -282,8 +282,8 @@ function getCodeUrl(code, baseURI) {
                         }).then(r => {
                             if (r) {
                                 resolve({
-                                    base:'',
-                                    src: requirejs.s.contexts._.config.baseUrl + src + '/index',
+                                    base:'./../src/packages/',
+                                    src: src + '/index',
                                 });
                             } else {
                                 resolve(null);
