@@ -56,9 +56,10 @@ function getAssetRealPath(url, base) {
         let modules_dir = _srcBaseUrl + '../node_modules/';
         // des 版本, SFC 文件也可能来自于 组件
         if (process.env.BUILD_TYPE === 'des') {
-            const parse = new URL(base, 'http://localhost');
-            if (parse.pathname.indexOf('/src/packages/') > -1) {
-                modules_dir = parse.pathname.split('/').slice(0, 4).join('/') + '/node_modules/'
+            const parse = new URL(base, location.href);
+            const match = parse.pathname.match(/.*?\/src\/packages\/[^\/]+\//);
+            if (match) {
+                modules_dir = match[0] + 'node_modules/';
             }
         }
         return modules_dir + url.substr(1).replace(/^\//g, '');
